@@ -1,11 +1,21 @@
 
+var precioInput= document.getElementById('precio');
+var porcentajeInput = document.getElementById('porcentaje');
+var calcularPropinaButton = document.getElementById('calcularPropina');
+var propinaCalculadaSpan = document.getElementById('propinaCalculada');
+var totalPagarSpan = document.getElementById('totalPagar');
 
-document.getElementById(precio);
+calcularPropinaButton.addEventListener('click', calcularPropina);
 
-document.getElementById(porcentaje).value;
+function calcularPropina() {
+    
+    var precio = parseFloat(precioInput.value);
+    var porcentaje = parseFloat(porcentajeInput.value);
 
-function calcularPorcentaje(){
-    let precio1 = document.getElementById(precio);
+    
+    var propina = (precio * porcentaje) / 100;
+    var total = precio + propina;
+
+    propinaCalculadaSpan.textContent = propina.toFixed(2);
+    totalPagarSpan.textContent = total.toFixed(2);
 }
-
-console.log (precio*porcentaje/100);

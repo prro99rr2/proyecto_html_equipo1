@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
+    <title>Calculadora de Propina</title>
+    <link rel="stylesheet" href="index.css">
+</head>
 <body>
-    <div class="conteiner"> 
-        <form action="">
-            <label for="precio">precio</label>
-
-            <input type="text" name="" id="precio">
-
-            <label for="porcentaje">porcentaje</label>
-
-            <input type="number" name="" id="porcentaje">
-
-            <label for="">10%</label>
-
-            <input type="button" value="Calcular propina">
-
-            <label for=""></label>
+    <div class="container">
+        <form id="calculadoraDePropinaFormula">
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio" placeholder="Ingrese el precio" required>
+            
+            <label for="porcentaje">Porcentaje de Propina:</label>
+            <input type="number" id="porcentaje" placeholder="Ingrese el porcentaje" required>
+            
+            <input type="button" value="Calcular Propina" id="calcularPropina">
+            
+            <div id="resultado">
+                <p>Propina Calculada: $<span id="propinaCalculada">0.00</span></p>
+                <p>Total a Pagar: $<span id="totalPagar">0.00</span></p>
+            </div>
         </form>
-        
     </div>
     <script src="index2.js"></script>
-    </body>
+</body>
 </html>
