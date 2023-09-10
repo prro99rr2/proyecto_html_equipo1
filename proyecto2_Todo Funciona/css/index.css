@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.925);
+    text-align: center;
+    width: 400px;
+}
+
+
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.Pe{
+    font-weight: bold;
+    font-size: 25px;
+}
+.Pa{
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+.Bo{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:25px;
+} 
+
+
+
+

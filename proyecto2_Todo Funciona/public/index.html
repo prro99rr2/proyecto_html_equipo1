@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-">
+<html xmlns="-">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="calculadoraDePropinaFormula">
+     <p class="Pe">Precio 
+       <input type="text" id="precio" name="precio" placeholder="Ingrese precio" required>
+      </p>
+      <p class="Pe">Porcentaje de Propina: 
+        <input type="text" id="propina" name="propina" placeholder="Ingrese el porcentaje" required>
+       </p>
+      <p class="Pa">
+  
+     Propina Calculada
+     <input type="text" id="propina calculada" name="propina calculada" style=" width: 100px;" readonly="readonly">
+     </p>
+     <p class="Pa">Total 
+  
+     <input type="text" id="total" name="total" style=" width: 100px;" readonly="readonly">
+     </p>
+
+
+     <a href="javascript:calcular();" class="Bo"><span >Calcular</span></a>
+
+    
+     
+    </form>
+ </div>
+   <script src="../src/index2.js"></script>
+</body>
+</html>
