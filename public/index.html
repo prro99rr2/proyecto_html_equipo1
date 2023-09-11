@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="calculadoraDePropinaFormula">
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" placeholder="Ingrese el precio" min="1" required>
+
+            <!--<label for="porcentaje">Porcentaje de Propina:</label>
+            <input type="number" id="porcentaje" placeholder="Ingrese el porcentaje" min="3" max="10" required>
+
+            <input type="button" value="Calcular Propina" id="calcularPropina">
+
+            <div id="resultado">
+                <p>Propina Calculada: $<span id="propinaCalculada">0.00</span></p>
+                <p>Total a Pagar: $<span id="totalPagar">0.00</span></p>
+            </div>-->
+
+            <input type="radio" id="porcent5" name="porcentajeSelec" value="5">
+            <label for="porcent5">5%</label><br>
+            <input type="radio" id="porcent10" name="porcentajeSelec" value="10">
+            <label for="porcent10">10%</label><br>
+            <input type="radio" id="porcent15" name="porcentajeSelec" value="15">
+            <label for="porcent15">15%</label><br><br>
+            
+            <input type="button" value="Calcular Propina" id="calcularPropinaRadio">
+            <div id="resultado">
+                <p>Propina Calculada: $<span id="propinaCalculadaRadio">0.00</span></p>
+                <p>Total a Pagar: $<span id="totalPagarRadio">0.00</span></p>
+            </div>
+
+        </form>
+    </div>
+    <script src="../src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
